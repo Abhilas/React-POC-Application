@@ -1,0 +1,76 @@
+//import variable.scss file
+@import 'variable.scss';
+
+.loginContainerDiv{ 
+    background: #FFF5EE;
+    padding: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.loginHeader{
+    border-bottom: 3px solid $primaryColor;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.loginButton {
+    background: $primaryColor;
+    border-color: $primaryColor;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.signUpParent{
+    margin: 10% auto;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.signUpParent p {
+    text-align: center;
+    color: #c1c1c1;
+}
+
+.signUpParent p a {
+    display: block;
+    color: $primaryColor;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 575px) {
+    .loginContainerDiv {
+        // background: yellow;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .loginContainerDiv {
+        // background: pink;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .loginContainerDiv {
+        // background: Orange;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .loginContainerDiv {
+        // background: lime;
+        width: 30%;
+    }
+}
