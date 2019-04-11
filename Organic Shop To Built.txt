@@ -1,0 +1,108 @@
+Organic Shop App:
+================
+
+    Features:
+    ========
+    1. Login/Sign Up
+    2. Home/Product page.
+    3. Checkout/preview page.
+    4. Cart page.
+    5. Thankyou page.
+    6. Logout.
+
+    *** ==> Will be using Google Firebase for DB.
+
+    Header:
+    ======
+    - Logo.
+    - Cart.
+    - Logged in User.
+        - User:
+            - My Orders.
+            - Profile.
+            - Logout.
+        - Admin:
+            - My Orders.
+            - Manage Products.
+            - Manage Orders.
+            - Profile.
+            - Logout.
+
+    Sign Up:
+    =======
+    - Allow a new user to Register.
+    - Fields:
+        - First Name.
+        - Middle Name.
+        - Last Name.
+        - Address.
+        - Gender.
+        - DOB.
+        - Contact Number.
+        - email.
+        - Username.
+        - Password.
+        - Confirm Password.
+        - Security questions for retrieve of username/password.
+    - Register button.
+    - Thankyou page with link to 'Login'.
+
+    Login:
+    =====
+    - Allow user to Login.
+    - should have a option to login as Admin.
+    - Fields:
+        - Username.
+        - Password.
+        - Forgot username.
+        - Forgot Password.
+
+    Forgot Username:
+    ===============
+    - Allow user to retrieve username.
+    - Fields:
+        - Contact number.
+        - Some Security questions.
+
+    Forgot Password:
+    ===============
+    - Allow user to retrieve password.
+    - Fields:
+        - Username/email.
+        - Contact Number.
+        - Some Security questions.
+
+    Home:
+    ====
+    - Allow user to see all the products.
+    - Link to see the order status.
+    - Should show all the categories and the list of items for each category.
+
+    Cart:
+    ====
+    - Should show the user the selected items.
+    - User should have a previlage to edit the items.
+    - User should be able to navigate back to the home page, where he can select the items.
+    - Should have checkout option.
+   
+    Checkout/preview:
+    ================
+    - Allow user to see all the selected items.
+    - Enter the shipping details and place the order.
+    - Fields:
+        - Name.
+        - Address.
+        - Contact Number.
+    - Should have an option to select from saved address.
+    - Order summary should be displayed.
+
+    Thankyou:
+    ========
+    - Should show the user Thankyou Message.
+
+    Logout:
+    ======
+    - Should be able to logout the user.
+    - Should have an option to Login.
+
+    
