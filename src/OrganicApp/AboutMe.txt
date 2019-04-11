@@ -1,0 +1,38 @@
+Routing:
+=======
+1. Import 'BrowserRouter' from 'react-router-dom'.
+2. Add 'BrowserRouter' to the root of the application.
+3. To get the router details on the component use 'withRouter' from 'react-router-dom'.
+4. Use 'withRouter' as HOC to wrap the component in the export.
+5. To navigate to the next page use the below methods:
+    - Import 'route' from 'react-router-dom'.
+    - Use <route path="/Home" component={<name of the component>}.
+    - Use <route path="/Home" render={<name of the component with props>}.
+
+    - The use of 'withRouter' as HOC enables the component to have access to all the navigation items like 'history', 'location', 'match'.
+
+    - To navigate to the next page programatically:
+        - this.props.history.push(<page/component name>).
+        - this.props.history.replace(<page/component name>).
+        - this.props.history.goBack() ==> used to go back to the previous page/component.
+
+6. To pass data through query params
+    - Data passed to the query string should be part of 'search' property.
+    - 'search': '?' + <data that need to pass>
+    - To access the data use 'props.location.search'.
+    - This will basically give '?<data>', to get it as key value pair use 'URLSearchParams'.
+    - const queryParams = new URLSearchParams(props.localtion.search);
+        for (let param of queryParams.entries()) {
+            console.log(param); // yields ['start', '5']
+        }
+
+        while looping through it gives an array with first element as key and the second element as value.
+
+7. To access a fragment/section of the page
+    - should use 'hash'
+    - 'hash': 'start'
+    - o/p url will be 'home#start'
+
+8. Lets say we want to pass some object to a component using routing.
+    - should use 'render' in place of 'component'.
+    - render = {() => (<compname and the props that need to pass>)}

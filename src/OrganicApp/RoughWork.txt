@@ -1,0 +1,85 @@
+<form>
+    <div className="form-group row">
+        <label 
+            htmlFor="tb_firstName" 
+            className="col-sm-2 col-form-label bold">{RegisterElementData.firstName}</label>
+        <input 
+            type="text" 
+            className="form-control col-sm-4" 
+            id="tb_firstName" 
+            placeholder={`${RegisterElementData.PlaceHolder} ${RegisterElementData.firstName}`}
+            required />
+    </div>
+    <div className="form-group row">
+        <label 
+            htmlFor="tb_lastName" 
+            className="col-sm-2 col-form-label bold">{RegisterElementData.lastName}</label>
+        <input 
+            type="text" 
+            className="form-control col-sm-4" 
+            id="tb_lastName"  
+            placeholder={`${RegisterElementData.PlaceHolder} ${RegisterElementData.lastName}`} 
+            required />
+    </div>
+    <div className="form-group row">
+        <label 
+            htmlFor="tb_email" 
+            className="col-sm-2 col-form-label bold">{RegisterElementData.email}</label>
+        <input 
+            type="text" 
+            className="form-control col-sm-4" 
+            id="tb_email" 
+            placeholder={`${RegisterElementData.PlaceHolder} ${RegisterElementData.email}`} 
+            required />
+    </div>
+    <div className="form-group row">
+        <label 
+            htmlFor="tb_username" 
+            className="col-sm-2 col-form-label bold">{RegisterElementData.usrname}</label>
+        <input 
+            type="text" 
+            className="form-control col-sm-4" 
+            id="tb_username" 
+            placeholder={`${RegisterElementData.PlaceHolder} ${RegisterElementData.usrname}`} 
+            required />
+        <button type="button" className="btn btn-link">{RegisterElementData.usrnameCheck}</button>
+    </div>
+    <div className="form-group row">
+        <label 
+            htmlFor="tb_password" 
+            className="col-sm-2 col-form-label bold">{RegisterElementData.password}</label>
+        <input 
+            type="password" 
+            className="form-control col-sm-4" 
+            id="tb_password" 
+            placeholder={RegisterElementData.passwordPlaceHolder} 
+            required />
+    </div>
+    <div className="form-group row">
+        <label 
+            htmlFor="tb_retypePass" 
+            className="col-sm-2 col-form-label bold">{RegisterElementData.retypePassword}</label>
+        <input 
+            type="password" 
+            className="form-control col-sm-4" 
+            id="tb_retypePass"
+            placeholder={RegisterElementData.retypePasswordPlaceHolder} 
+            required />
+    </div>
+    <button type="submit" className="btn btn-primary loginButton">{RegisterElementData.btnRegister}</button>
+</form>
+
+first name
+last name
+email
+
+dob
+address
+country
+city
+pin
+
+contact number
+username
+password
+retry password
