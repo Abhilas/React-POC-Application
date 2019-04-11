@@ -1,0 +1,36 @@
+<Card>
+            <CardHeader>
+                <h4>Header</h4>
+            </CardHeader>
+            <CardText>I am Text</CardText>
+            <CardMedia
+                overlay={
+                    <CardTitle title={props.movie.title}/>
+                }>
+                <img src={restructureImageURL(props.movie.poster_path)} />
+            </CardMedia>
+            <CardActions>
+                <button>Click Me</button>
+            </CardActions>
+        </Card>
+
+======================================================================
+
+// function restructureImageURL(url){
+//     console.log('url...', url);
+//     let updatedURL = `https://image.tmdb.org/t/p/w300${url}`;
+//     return updatedURL;
+// }
+
+// const mapStateToProps = (state) => {
+//     return {
+//         counter: state.counter
+//     }
+// }
+
+
+
+{/*<div className="col-sm-4">
+            <img src={restructureImageURL(props.movie.poster_path)} />
+            <p>{props.movie.title}</p>
+        </div>*/}

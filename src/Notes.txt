@@ -1,0 +1,48 @@
+Outsourcing Action Types
+====================================
+
+Actions can be outsourced to another file so that we can just use the variable name rather than typing it again and again.
+
+e.g. 
+
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
+
+In the file where we want to use it:
+import * as ActionTypes from <file name>;
+
+case ActionTypes.INCREMENT
+case ActionTypes.DECREMENT
+
+This type is basically used to avoid typo.
+
+
+Combining both Redux and Local State
+====================================
+
+We can combine both Redux state as well as local state for managing state.
+
+Refer ==> Person folder.
+
+*** ==> while we are using connect we need to use data from 'Redux';
+
+
+Data Communication between Reducers
+====================================
+1. Pass data as payloads from dispatch and Intercept it in the Reducer. ==> Refer 'CommunicationBetweenReducers > option1'.
+
+2. Using Middleware ==>
+    Middleware is a function that we hook to a process, which then executes as a part of the process without interacting it.
+
+
+Action Creators:
+================
+Code always runs synchronously but what will happen when any asynchronous code runs, lets say we make a api call in the switch statement in Reducer. Till the time the api call happens the switch statement is already executed. So to acheive that we use 'action creators'.
+
+Action creators is a function that returns/Creates an Action.
+
+Redux-thunk:
+============
+
+1. import thunk from 'redux-thunk' and pass it to the applyMiddleware function. i.e. applyMiddleware(thunk);
+2. It should always return a new function that takes 'dispatch' as an argument and dispatch the action to be performed.
