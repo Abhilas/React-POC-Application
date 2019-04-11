@@ -1,0 +1,54 @@
+@import 'variable.scss';
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 .2rem rgba(87,184,71,.25);
+    border-color: $primaryColor;
+}
+
+.pageContainer {
+    margin: 3% auto;
+    width: 90%;
+    background: $whiteColor;
+}
+
+.banner {
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 70%;
+}
+
+.containerLayout {
+    padding:50px;
+}
+
+.withHeaderLine {
+    border-bottom: 3px solid $primaryColor;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.notifyMsg {
+    text-align: center;
+}
+
