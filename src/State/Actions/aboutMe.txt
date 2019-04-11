@@ -1,0 +1,2 @@
+- Action creators will interupt between the action dispatched and the action reaching the Dispatcher.
+- Basically Each Action creators should be the same as that of the Action but rather than having it in all caps and '_', we can use camelCase.
